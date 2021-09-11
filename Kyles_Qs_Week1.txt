@@ -1,0 +1,20 @@
+SELECT * FROM employees WHERE emp_no = '10089' AND emp_no = '10034' AND emp_no = '10099' AND emp_no = '10048';
+
+DELETE FROM employees WHERE emp_no = '10089' AND emp_no = '10034' AND emp_no = '10099' AND emp_no = '10048';
+
+DELETE FROM employees WHERE emp_no < 10000;
+
+UPDATE employees SET hire_date = '2002-01-01' WHERE first_name LIKE 'P%' OR last_name LIKE 'P%';
+
+UPDATE employees SET first_name = 'Bob' WHERE emp_no =10023;
+
+INSERT INTO employees VALUES(100, '0000-00-00', 'One', 'One', 'M', '0000-00-00'), (101, '0000-00-00', 'Two', 'Two', 'M', '0000-00-00'), (102, '0000-00-00', 'Three', 'Three', 'M', '0000-00-00');
+
+SELECT * FROM employees WHERE last_name LIKE 'F%' LIMIT 50;
+
+DELECT * FROM employees WHERE last_name LIKE 'F%' LIMIT 50;
+
+SELECT * FROM employees WHERE gender='f' AND hire_date>='1991-01-01' LIMIT 20;
+
+SELECT * FROM employees WHERE birth_date<'1965-01-01' LIMIT 20;
+
